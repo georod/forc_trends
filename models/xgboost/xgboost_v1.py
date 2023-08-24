@@ -164,7 +164,7 @@ print("R-sq: %.2f" % r2)
 
 # Save model
 # save in JSON format
-model_m2e.save_model("model_m2e_regression2.json")
+model_m2e.save_model("model_m2e_regression3.json")
 # save in text format
 #model_m2.save_model("model_m2.txt")
 
