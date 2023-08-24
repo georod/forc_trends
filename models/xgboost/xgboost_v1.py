@@ -2,7 +2,7 @@
 # Peter R.
 # XGBoost script
 
-
+import os
 import pandas as pd
 from numpy import nan
 import xgboost as xgb
@@ -16,12 +16,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import RandomizedSearchCV
 
 
+os.chdir("/home/georod/projects/def-mfortin/georod/scripts/github/forc_trends/models/xgboost")
+
+
 print("XGB version:", xgb.__version__)
 
 # Windows
-df1 = pd.read_csv(r'.\data\forest_evi_breaks_sam3.csv', skipinitialspace=True)
+#df1 = pd.read_csv(r'.\data\forest_evi_breaks_sam3.csv', skipinitialspace=True)
 # DRAC
-#df1 = pd.read_csv(r'./data/forest_evi_breaks_sam3.csv', skipinitialspace=True)
+df1 = pd.read_csv(r'./data/forest_evi_breaks_sam3.csv', skipinitialspace=True)
 #df1.head()
 
 df2 = pd.get_dummies(df1, columns=['protected'], dtype=float)
