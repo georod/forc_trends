@@ -1,7 +1,7 @@
 # 2023-08-26
 # Peter R.
 # XGBoost script
-# Positive breaks, n_estimators (number of trees)=1000 and with optimal parameter from DRAC model_bp1
+# Positive breaks, n_estimators (number of trees)=1000 and with optimal parameter from DRAC model_bp1 & early stopping
 
 import os
 import time
