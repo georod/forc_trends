@@ -33,6 +33,7 @@ cwd = os.getcwd()
 os.chdir("/home/georod/projects/def-mfortin/georod/scripts/github/forc_trends/models/xgboost")
 
 print("XGB version:", xgb.__version__)
+print("positive breaks")
 
 # Windows
 #df1 = pd.read_csv(r'.\data\forest_evi_breaks_positive_sam1.csv', skipinitialspace=True)
@@ -71,13 +72,13 @@ x1_train, x1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=testsi
 model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
              colsample_bytree=None, early_stopping_rounds=50,
-             enable_categorical=False, eval_metric=None, feature_types=None,
+             enable_categorical=False, eval_metric=["error", "logloss"], feature_types=None,
              gamma=0.05, gpu_id=None, grow_policy=None, importance_type=None,
              interaction_constraints=None, learning_rate=0.005, max_bin=None,
              max_cat_threshold=None, max_cat_to_onehot=None,
              max_delta_step=None, max_depth=8, max_leaves=None,
              min_child_weight=None, missing=nan, monotone_constraints=None,
-             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
+             n_estimators=3000, n_jobs=None, num_parallel_tree=None,
              predictor=None, random_state=None, reg_lambda=10, reg_alpha=0.1 )
 
 
@@ -95,6 +96,7 @@ mse = mean_squared_error(y1_test, y_pred)
 #r2 = explained_variance_score(y1_test, ypred)
 r2 = r2_score(y1_test, y_pred)
 print("MSE: %.2f" % mse)
+print('Mean RMSE: %.3f (%.3f)' % (scores2.mean()**(1/2.0), scores2.std()**(1/2.0)))
 
 print("RMSE: %.2f" % (mse**(1/2.0)))
 

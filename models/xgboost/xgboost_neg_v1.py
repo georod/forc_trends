@@ -33,6 +33,7 @@ cwd = os.getcwd()
 os.chdir("/home/georod/projects/def-mfortin/georod/scripts/github/forc_trends/models/xgboost")
 
 print("XGB version:", xgb.__version__)
+print("negative breaks")
 
 # Windows
 #df1 = pd.read_csv(r'.\data\forest_evi_breaks_positive_sam1.csv', skipinitialspace=True)
@@ -126,6 +127,8 @@ scores2 = cross_val_score(model_bp1, x1_train, y1_train, scoring='neg_mean_squar
 # force scores to be positive
 scores2 = absolute(scores)
 print('Mean MSE: %.3f (%.3f)' % (scores2.mean(), scores2.std()) )
+
+print('Mean RMSE: %.3f (%.3f)' % (scores2.mean()**(1/2.0), scores2.std()**(1/2.0)))
 
 # evaluate model with variance explained
 scores3 = cross_val_score(model_bp1, x1_train, y1_train, scoring='explained_variance', cv=cv, n_jobs=-1)
