@@ -98,7 +98,6 @@ mse = mean_squared_error(y1_test, y_pred)
 #r2 = explained_variance_score(y1_test, ypred)
 r2 = r2_score(y1_test, y_pred)
 print("MSE: %.2f" % mse)
-print('Mean RMSE: %.3f (%.3f)' % (scores2.mean()**(1/2.0), scores2.std()**(1/2.0)))
 
 print("RMSE: %.2f" % (mse**(1/2.0)))
 
