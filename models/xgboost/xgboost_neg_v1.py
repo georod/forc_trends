@@ -1,7 +1,7 @@
-# 2023-08-25
+# 2023-08-28
 # Peter R.
 # XGBoost script
-# Negative breaks, n_estimators (number of trees)=1000
+# Negative breaks, n_estimators (number of trees)=3000
 
 import os
 import time
@@ -76,7 +76,7 @@ params_xgboost = {
  "gamma"            : [ 0.0, 0.01, 0.05, 0.1, 0.2, 0.3],
  #"colsample_bytree" : [ 0.3, 0.4, 0.5 , 0.7],
  #'n_estimators'     : [5, 10, 15, 20, 25, 30, 35],
-'n_estimators'     : [1000],
+'n_estimators'     : [3000],
  'objective': ['reg:squarederror'],
 #'early_stopping_rounds': [10]
 # reg_alpha provides L1 regularization to the weight, higher values result in more conservative models

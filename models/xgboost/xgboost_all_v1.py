@@ -1,7 +1,7 @@
-# 2023-08-25
+# 2023-08-28
 # Peter R.
 # XGBoost script
-# Positive breaks, n_estimators (number of trees)=1000, all breaks
+# Positive breaks, n_estimators (number of trees)=3000, all breaks
 
 import os
 import time
@@ -76,7 +76,7 @@ params_xgboost = {
  "gamma"            : [ 0.0, 0.01, 0.05, 0.1, 0.2, 0.3],
  #"colsample_bytree" : [ 0.3, 0.4, 0.5 , 0.7],
  #'n_estimators'     : [5, 10, 15, 20, 25, 30, 35],
-'n_estimators'     : [1000],
+'n_estimators'     : [3000],
  'objective': ['reg:squarederror'],
 #'early_stopping_rounds': [10]
 # reg_alpha provides L1 regularization to the weight, higher values result in more conservative models
@@ -116,16 +116,16 @@ cv = RepeatedKFold(n_splits=10, n_repeats=3, random_state=seed)
 # evaluate model with train
 # -1 means using all processors in parallel
 # cross val takes place withing the train data set
-scores = cross_val_score(model_bp1, x1_train, y1_train, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
 
+scores = cross_val_score(model_bp1, x1_train, y1_train, scoring='neg_mean_absolute_error', cv=cv, n_jobs=-1)
 # force scores to be positive
 scores = absolute(scores)
 print('Mean MAE: %.3f (%.3f)' % (scores.mean(), scores.std()) )
 
-scores2 = cross_val_score(model_bp1, x1_train, y1_train, scoring='neg_mean_squared_error', cv=cv, n_jobs=-1)
 
+scores2 = cross_val_score(model_bp1, x1_train, y1_train, scoring='neg_mean_squared_error', cv=cv, n_jobs=-1)
 # force scores to be positive
-scores2 = absolute(scores)
+scores2 = absolute(scores2)
 print('Mean MSE: %.3f (%.3f)' % (scores2.mean(), scores2.std()) )
 
 print('Mean RMSE: %.3f (%.3f)' % (scores2.mean()**(1/2.0), scores2.std()**(1/2.0)))
