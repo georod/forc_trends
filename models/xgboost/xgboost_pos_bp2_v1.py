@@ -79,7 +79,7 @@ model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              max_cat_threshold=None, max_cat_to_onehot=None,
              max_delta_step=None, max_depth=6, max_leaves=None,
              min_child_weight=None, missing=nan, monotone_constraints=None,
-             n_estimators=3000, n_jobs=None, num_parallel_tree=None,
+             n_estimators=1000, n_jobs=None, num_parallel_tree=None,
              predictor=None, random_state=None, reg_lambda=10, reg_alpha=0.1)
 
 
