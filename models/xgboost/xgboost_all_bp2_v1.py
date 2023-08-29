@@ -68,18 +68,18 @@ testsize1 = 0.33 # percent of records to test after training
 x1_train, x1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=testsize1, random_state=seed)
 
 
-#{'reg_lambda': 100, 'reg_alpha': 100, 'objective': 'reg:squarederror', 'n_estimators': 3000, 'max_depth': 10, 'learning_rate': 0.01, 'gamma': 0.0}
+#{'reg_lambda': 10, 'reg_alpha': 100, 'objective': 'reg:squarederror', 'n_estimators': 1000, 'max_depth': 10, 'learning_rate': 0.05, 'gamma': 0.05}
 model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
-             colsample_bytree=None, early_stopping_rounds=None,
+             colsample_bytree=None, early_stopping_rounds=50,
              enable_categorical=False, eval_metric=None, feature_types=None,
-             gamma=0.0, gpu_id=None, grow_policy=None, importance_type=None,
-             interaction_constraints=None, learning_rate=0.01, max_bin=None,
+             gamma=0.05, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
              max_cat_threshold=None, max_cat_to_onehot=None,
              max_delta_step=None, max_depth=10, max_leaves=None,
              min_child_weight=None, missing=nan, monotone_constraints=None,
              n_estimators=1000, n_jobs=None, num_parallel_tree=None,
-             predictor=None, random_state=None, reg_lambda= 100, reg_alpha= 100)
+             predictor=None, random_state=42, reg_lambda= 10, reg_alpha= 100)
 
 
 # EVALUATION (with test)
