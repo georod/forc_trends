@@ -69,7 +69,7 @@ x1_train, x1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=testsi
 
 
 #{'reg_lambda': 100, 'reg_alpha': 100, 'objective': 'reg:squarederror', 'n_estimators': 3000, 'max_depth': 10, 'learning_rate': 0.01, 'gamma': 0.0}
-XGBRegressor(base_score=None, booster=None, callbacks=None,
+model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
              colsample_bytree=None, early_stopping_rounds=50,
              enable_categorical=False, eval_metric=None, feature_types=None,
