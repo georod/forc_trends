@@ -1,0 +1,965 @@
+digraph {
+    graph [ rankdir=TB ]
+
+    0 [ label="precipitation_lag2<1308.5" ]
+    0 -> 1 [label="yes, missing" color="#0000FF"]
+    0 -> 2 [label="no" color="#FF0000"]
+
+    1 [ label="precipitation_lag2<1296.5" ]
+    1 -> 3 [label="yes, missing" color="#0000FF"]
+    1 -> 4 [label="no" color="#FF0000"]
+
+    3 [ label="precipitation_lag2<1278.5" ]
+    3 -> 7 [label="yes, missing" color="#0000FF"]
+    3 -> 8 [label="no" color="#FF0000"]
+
+    7 [ label="precipitation_lag2<1185.5" ]
+    7 -> 15 [label="yes, missing" color="#0000FF"]
+    7 -> 16 [label="no" color="#FF0000"]
+
+    15 [ label="precipitation_lag2<1174.5" ]
+    15 -> 31 [label="yes, missing" color="#0000FF"]
+    15 -> 32 [label="no" color="#FF0000"]
+
+    31 [ label="precipitation_lag2<1172.5" ]
+    31 -> 57 [label="yes, missing" color="#0000FF"]
+    31 -> 58 [label="no" color="#FF0000"]
+
+    57 [ label="precipitation_lag2<1136.5" ]
+    57 -> 97 [label="yes, missing" color="#0000FF"]
+    57 -> 98 [label="no" color="#FF0000"]
+
+    97 [ label="rh<63.5" ]
+    97 -> 143 [label="yes, missing" color="#0000FF"]
+    97 -> 144 [label="no" color="#FF0000"]
+
+    143 [ label="precipitation_lag2<1133.5" ]
+    143 -> 195 [label="yes, missing" color="#0000FF"]
+    143 -> 196 [label="no" color="#FF0000"]
+
+    195 [ label="precipitation_lag2<1131.5" ]
+    195 -> 259 [label="yes, missing" color="#0000FF"]
+    195 -> 260 [label="no" color="#FF0000"]
+
+    259 [ label="leaf=0.038884487" ]
+
+    260 [ label="leaf=-1.894822" ]
+
+    196 [ label="age<69.2200012" ]
+    196 -> 261 [label="yes" color="#FF0000"]
+    196 -> 262 [label="no, missing" color="#0000FF"]
+
+    261 [ label="leaf=4.0567584" ]
+
+    262 [ label="leaf=0.0555570312" ]
+
+    144 [ label="rh<63.9500008" ]
+    144 -> 197 [label="yes, missing" color="#0000FF"]
+    144 -> 198 [label="no" color="#FF0000"]
+
+    197 [ label="deciduous<72.5429993" ]
+    197 -> 263 [label="yes, missing" color="#0000FF"]
+    197 -> 264 [label="no" color="#FF0000"]
+
+    263 [ label="leaf=0.537346065" ]
+
+    264 [ label="leaf=-4.60711718" ]
+
+    198 [ label="age<68.3450012" ]
+    198 -> 265 [label="yes" color="#FF0000"]
+    198 -> 266 [label="no, missing" color="#0000FF"]
+
+    265 [ label="leaf=-0.206507191" ]
+
+    266 [ label="leaf=0.859963536" ]
+
+    98 [ label="precipitation_lag2<1142.5" ]
+    98 -> 145 [label="yes, missing" color="#0000FF"]
+    98 -> 146 [label="no" color="#FF0000"]
+
+    145 [ label="precipitation_lag3<953.5" ]
+    145 -> 199 [label="yes, missing" color="#0000FF"]
+    145 -> 200 [label="no" color="#FF0000"]
+
+    199 [ label="precipitation_lag3<929.5" ]
+    199 -> 267 [label="yes, missing" color="#0000FF"]
+    199 -> 268 [label="no" color="#FF0000"]
+
+    267 [ label="leaf=-1.76960015" ]
+
+    268 [ label="leaf=0.0892425552" ]
+
+    200 [ label="precipitation<955.5" ]
+    200 -> 269 [label="yes, missing" color="#0000FF"]
+    200 -> 270 [label="no" color="#FF0000"]
+
+    269 [ label="leaf=-6.86569309" ]
+
+    270 [ label="leaf=-0" ]
+
+    146 [ label="temperature<6.03499985" ]
+    146 -> 201 [label="yes, missing" color="#0000FF"]
+    146 -> 202 [label="no" color="#FF0000"]
+
+    201 [ label="temperature_lag1<4.93000031" ]
+    201 -> 271 [label="yes, missing" color="#0000FF"]
+    201 -> 272 [label="no" color="#FF0000"]
+
+    271 [ label="leaf=-0.00962989777" ]
+
+    272 [ label="leaf=4.05863142" ]
+
+    202 [ label="precipitation_lag1<1059.5" ]
+    202 -> 273 [label="yes, missing" color="#0000FF"]
+    202 -> 274 [label="no" color="#FF0000"]
+
+    273 [ label="leaf=-0" ]
+
+    274 [ label="leaf=-7.8844409" ]
+
+    58 [ label="temperature_lag3<5.46000004" ]
+    58 -> 99 [label="yes, missing" color="#0000FF"]
+    58 -> 100 [label="no" color="#FF0000"]
+
+    99 [ label="elevation<496" ]
+    99 -> 147 [label="yes, missing" color="#0000FF"]
+    99 -> 148 [label="no" color="#FF0000"]
+
+    147 [ label="age<74.8800049" ]
+    147 -> 203 [label="yes" color="#FF0000"]
+    147 -> 204 [label="no, missing" color="#0000FF"]
+
+    203 [ label="leaf=-0" ]
+
+    204 [ label="temperature_lag1<4.81999969" ]
+    204 -> 275 [label="yes, missing" color="#0000FF"]
+    204 -> 276 [label="no" color="#FF0000"]
+
+    275 [ label="leaf=6.82588339" ]
+
+    276 [ label="leaf=0.0597549453" ]
+
+    148 [ label="age<73.7299957" ]
+    148 -> 205 [label="yes" color="#FF0000"]
+    148 -> 206 [label="no, missing" color="#0000FF"]
+
+    205 [ label="leaf=-0" ]
+
+    206 [ label="leaf=-0.467572033" ]
+
+    100 [ label="temperature<3.90500021" ]
+    100 -> 149 [label="yes, missing" color="#0000FF"]
+    100 -> 150 [label="no" color="#FF0000"]
+
+    149 [ label="leaf=-1.7119627" ]
+
+    150 [ label="temperature<3.92000008" ]
+    150 -> 207 [label="yes, missing" color="#0000FF"]
+    150 -> 208 [label="no" color="#FF0000"]
+
+    207 [ label="leaf=0.615773618" ]
+
+    208 [ label="leaf=-0" ]
+
+    32 [ label="precipitation_lag1<1062.5" ]
+    32 -> 59 [label="yes, missing" color="#0000FF"]
+    32 -> 60 [label="no" color="#FF0000"]
+
+    59 [ label="temperature<4.96000004" ]
+    59 -> 101 [label="yes, missing" color="#0000FF"]
+    59 -> 102 [label="no" color="#FF0000"]
+
+    101 [ label="elevation<412.5" ]
+    101 -> 151 [label="yes, missing" color="#0000FF"]
+    101 -> 152 [label="no" color="#FF0000"]
+
+    151 [ label="precipitation_lag2<1180.5" ]
+    151 -> 209 [label="yes, missing" color="#0000FF"]
+    151 -> 210 [label="no" color="#FF0000"]
+
+    209 [ label="precipitation<1055.5" ]
+    209 -> 277 [label="yes, missing" color="#0000FF"]
+    209 -> 278 [label="no" color="#FF0000"]
+
+    277 [ label="leaf=-2.37156367" ]
+
+    278 [ label="leaf=-0" ]
+
+    210 [ label="deciduous<76.0139999" ]
+    210 -> 279 [label="yes, missing" color="#0000FF"]
+    210 -> 280 [label="no" color="#FF0000"]
+
+    279 [ label="leaf=0.24312973" ]
+
+    280 [ label="leaf=-0" ]
+
+    152 [ label="leaf=1.55201972" ]
+
+    102 [ label="rh_lag3<58.25" ]
+    102 -> 153 [label="yes, missing" color="#0000FF"]
+    102 -> 154 [label="no" color="#FF0000"]
+
+    153 [ label="leaf=-0" ]
+
+    154 [ label="age<69.3899994" ]
+    154 -> 211 [label="yes" color="#FF0000"]
+    154 -> 212 [label="no, missing" color="#0000FF"]
+
+    211 [ label="leaf=-0" ]
+
+    212 [ label="deciduous<88.3349991" ]
+    212 -> 281 [label="yes, missing" color="#0000FF"]
+    212 -> 282 [label="no" color="#FF0000"]
+
+    281 [ label="leaf=-7.36588049" ]
+
+    282 [ label="leaf=-0" ]
+
+    60 [ label="temperature_lag1<2.9749999" ]
+    60 -> 103 [label="yes, missing" color="#0000FF"]
+    60 -> 104 [label="no" color="#FF0000"]
+
+    103 [ label="precipitation<875" ]
+    103 -> 155 [label="yes, missing" color="#0000FF"]
+    103 -> 156 [label="no" color="#FF0000"]
+
+    155 [ label="age<73.0599976" ]
+    155 -> 213 [label="yes" color="#FF0000"]
+    155 -> 214 [label="no, missing" color="#0000FF"]
+
+    213 [ label="leaf=-0" ]
+
+    214 [ label="leaf=-7.14460516" ]
+
+    156 [ label="precipitation_lag1<1130" ]
+    156 -> 215 [label="yes, missing" color="#0000FF"]
+    156 -> 216 [label="no" color="#FF0000"]
+
+    215 [ label="leaf=-0.123529568" ]
+
+    216 [ label="deciduous<91.4164963" ]
+    216 -> 283 [label="yes, missing" color="#0000FF"]
+    216 -> 284 [label="no" color="#FF0000"]
+
+    283 [ label="leaf=1.30031919" ]
+
+    284 [ label="leaf=-0.00967074372" ]
+
+    104 [ label="elevation<372.5" ]
+    104 -> 157 [label="yes, missing" color="#0000FF"]
+    104 -> 158 [label="no" color="#FF0000"]
+
+    157 [ label="age<80.6399994" ]
+    157 -> 217 [label="yes" color="#FF0000"]
+    157 -> 218 [label="no, missing" color="#0000FF"]
+
+    217 [ label="leaf=-2.10673618" ]
+
+    218 [ label="leaf=0.643490314" ]
+
+    158 [ label="elevation<450" ]
+    158 -> 219 [label="yes, missing" color="#0000FF"]
+    158 -> 220 [label="no" color="#FF0000"]
+
+    219 [ label="deciduous<86.1259995" ]
+    219 -> 285 [label="yes, missing" color="#0000FF"]
+    219 -> 286 [label="no" color="#FF0000"]
+
+    285 [ label="leaf=3.45484805" ]
+
+    286 [ label="leaf=-0" ]
+
+    220 [ label="age<75.5350037" ]
+    220 -> 287 [label="yes" color="#FF0000"]
+    220 -> 288 [label="no, missing" color="#0000FF"]
+
+    287 [ label="leaf=1.34938657" ]
+
+    288 [ label="leaf=-1.284531" ]
+
+    16 [ label="precipitation_lag2<1186.5" ]
+    16 -> 33 [label="yes, missing" color="#0000FF"]
+    16 -> 34 [label="no" color="#FF0000"]
+
+    33 [ label="deciduous<75.7819977" ]
+    33 -> 61 [label="yes, missing" color="#0000FF"]
+    33 -> 62 [label="no" color="#FF0000"]
+
+    61 [ label="age<95.2399979" ]
+    61 -> 105 [label="yes" color="#FF0000"]
+    61 -> 106 [label="no, missing" color="#0000FF"]
+
+    105 [ label="leaf=8.49890709" ]
+
+    106 [ label="leaf=-0" ]
+
+    62 [ label="leaf=-0.403761625" ]
+
+    34 [ label="deciduous<77.022995" ]
+    34 -> 63 [label="yes, missing" color="#0000FF"]
+    34 -> 64 [label="no" color="#FF0000"]
+
+    63 [ label="precipitation_lag3<886.5" ]
+    63 -> 107 [label="yes, missing" color="#0000FF"]
+    63 -> 108 [label="no" color="#FF0000"]
+
+    107 [ label="elevation<414" ]
+    107 -> 159 [label="yes, missing" color="#0000FF"]
+    107 -> 160 [label="no" color="#FF0000"]
+
+    159 [ label="precipitation_lag1<1079.5" ]
+    159 -> 221 [label="yes, missing" color="#0000FF"]
+    159 -> 222 [label="no" color="#FF0000"]
+
+    221 [ label="leaf=1.62129784" ]
+
+    222 [ label="leaf=-0" ]
+
+    160 [ label="age<59.9749985" ]
+    160 -> 223 [label="yes" color="#FF0000"]
+    160 -> 224 [label="no, missing" color="#0000FF"]
+
+    223 [ label="leaf=0.51609093" ]
+
+    224 [ label="elevation<439" ]
+    224 -> 289 [label="yes, missing" color="#0000FF"]
+    224 -> 290 [label="no" color="#FF0000"]
+
+    289 [ label="leaf=-6.01011372" ]
+
+    290 [ label="leaf=-0.197036743" ]
+
+    108 [ label="precipitation_lag2<1241.5" ]
+    108 -> 161 [label="yes, missing" color="#0000FF"]
+    108 -> 162 [label="no" color="#FF0000"]
+
+    161 [ label="precipitation<999.5" ]
+    161 -> 225 [label="yes, missing" color="#0000FF"]
+    161 -> 226 [label="no" color="#FF0000"]
+
+    225 [ label="elevation<376" ]
+    225 -> 291 [label="yes, missing" color="#0000FF"]
+    225 -> 292 [label="no" color="#FF0000"]
+
+    291 [ label="leaf=3.22897124" ]
+
+    292 [ label="leaf=-1.16641033" ]
+
+    226 [ label="temperature_lag2<3.24000001" ]
+    226 -> 293 [label="yes, missing" color="#0000FF"]
+    226 -> 294 [label="no" color="#FF0000"]
+
+    293 [ label="leaf=-0.855818748" ]
+
+    294 [ label="leaf=3.13095093" ]
+
+    162 [ label="precipitation_lag3<955" ]
+    162 -> 227 [label="yes, missing" color="#0000FF"]
+    162 -> 228 [label="no" color="#FF0000"]
+
+    227 [ label="precipitation<999" ]
+    227 -> 295 [label="yes, missing" color="#0000FF"]
+    227 -> 296 [label="no" color="#FF0000"]
+
+    295 [ label="leaf=0.191267148" ]
+
+    296 [ label="leaf=-4.03658247" ]
+
+    228 [ label="temperature_lag2<4.51000023" ]
+    228 -> 297 [label="yes, missing" color="#0000FF"]
+    228 -> 298 [label="no" color="#FF0000"]
+
+    297 [ label="leaf=0.388639003" ]
+
+    298 [ label="leaf=-1.5436126" ]
+
+    64 [ label="precipitation_lag1<1085.5" ]
+    64 -> 109 [label="yes, missing" color="#0000FF"]
+    64 -> 110 [label="no" color="#FF0000"]
+
+    109 [ label="precipitation_lag3<892.5" ]
+    109 -> 163 [label="yes, missing" color="#0000FF"]
+    109 -> 164 [label="no" color="#FF0000"]
+
+    163 [ label="precipitation_lag1<1082.5" ]
+    163 -> 229 [label="yes, missing" color="#0000FF"]
+    163 -> 230 [label="no" color="#FF0000"]
+
+    229 [ label="age<76.1100006" ]
+    229 -> 299 [label="yes" color="#FF0000"]
+    229 -> 300 [label="no, missing" color="#0000FF"]
+
+    299 [ label="leaf=-0.983779728" ]
+
+    300 [ label="leaf=1.14080667" ]
+
+    230 [ label="age<72.9749985" ]
+    230 -> 301 [label="yes" color="#FF0000"]
+    230 -> 302 [label="no, missing" color="#0000FF"]
+
+    301 [ label="leaf=-0" ]
+
+    302 [ label="leaf=10.817234" ]
+
+    164 [ label="temperature<5.39499998" ]
+    164 -> 231 [label="yes, missing" color="#0000FF"]
+    164 -> 232 [label="no" color="#FF0000"]
+
+    231 [ label="deciduous<86.3889999" ]
+    231 -> 303 [label="yes, missing" color="#0000FF"]
+    231 -> 304 [label="no" color="#FF0000"]
+
+    303 [ label="leaf=-0.459509522" ]
+
+    304 [ label="leaf=4.44339323" ]
+
+    232 [ label="age<74.2700043" ]
+    232 -> 305 [label="yes" color="#FF0000"]
+    232 -> 306 [label="no, missing" color="#0000FF"]
+
+    305 [ label="leaf=0.613075197" ]
+
+    306 [ label="leaf=-2.82136202" ]
+
+    110 [ label="deciduous<77.9165039" ]
+    110 -> 165 [label="yes, missing" color="#0000FF"]
+    110 -> 166 [label="no" color="#FF0000"]
+
+    165 [ label="temperature_lag1<3.63499999" ]
+    165 -> 233 [label="yes, missing" color="#0000FF"]
+    165 -> 234 [label="no" color="#FF0000"]
+
+    233 [ label="age<86.3800049" ]
+    233 -> 307 [label="yes" color="#FF0000"]
+    233 -> 308 [label="no, missing" color="#0000FF"]
+
+    307 [ label="leaf=5.72567272" ]
+
+    308 [ label="leaf=-0" ]
+
+    234 [ label="temperature_lag1<3.75" ]
+    234 -> 309 [label="yes, missing" color="#0000FF"]
+    234 -> 310 [label="no" color="#FF0000"]
+
+    309 [ label="leaf=-0.743012369" ]
+
+    310 [ label="leaf=0.0329587832" ]
+
+    166 [ label="precipitation_lag3<925.5" ]
+    166 -> 235 [label="yes, missing" color="#0000FF"]
+    166 -> 236 [label="no" color="#FF0000"]
+
+    235 [ label="age<68.1800003" ]
+    235 -> 311 [label="yes" color="#FF0000"]
+    235 -> 312 [label="no, missing" color="#0000FF"]
+
+    311 [ label="leaf=0.350560516" ]
+
+    312 [ label="leaf=-2.54203653" ]
+
+    236 [ label="rh_lag3<60.0999985" ]
+    236 -> 313 [label="yes, missing" color="#0000FF"]
+    236 -> 314 [label="no" color="#FF0000"]
+
+    313 [ label="leaf=2.09945154" ]
+
+    314 [ label="leaf=0.0367292203" ]
+
+    8 [ label="precipitation_lag1<1102.5" ]
+    8 -> 17 [label="yes, missing" color="#0000FF"]
+    8 -> 18 [label="no" color="#FF0000"]
+
+    17 [ label="deciduous<81.2279968" ]
+    17 -> 35 [label="yes, missing" color="#0000FF"]
+    17 -> 36 [label="no" color="#FF0000"]
+
+    35 [ label="leaf=-0" ]
+
+    36 [ label="leaf=-5.97854567" ]
+
+    18 [ label="precipitation_lag1<1104.5" ]
+    18 -> 37 [label="yes, missing" color="#0000FF"]
+    18 -> 38 [label="no" color="#FF0000"]
+
+    37 [ label="leaf=6.67857599" ]
+
+    38 [ label="temperature_lag3<4.29500008" ]
+    38 -> 65 [label="yes, missing" color="#0000FF"]
+    38 -> 66 [label="no" color="#FF0000"]
+
+    65 [ label="elevation<513" ]
+    65 -> 111 [label="yes, missing" color="#0000FF"]
+    65 -> 112 [label="no" color="#FF0000"]
+
+    111 [ label="leaf=-6.21884823" ]
+
+    112 [ label="leaf=-0" ]
+
+    66 [ label="temperature_lag3<4.48999977" ]
+    66 -> 113 [label="yes, missing" color="#0000FF"]
+    66 -> 114 [label="no" color="#FF0000"]
+
+    113 [ label="deciduous<89.5404968" ]
+    113 -> 167 [label="yes, missing" color="#0000FF"]
+    113 -> 168 [label="no" color="#FF0000"]
+
+    167 [ label="age<85.0899963" ]
+    167 -> 237 [label="yes" color="#FF0000"]
+    167 -> 238 [label="no, missing" color="#0000FF"]
+
+    237 [ label="leaf=5.39614058" ]
+
+    238 [ label="leaf=-0" ]
+
+    168 [ label="leaf=-0.586838901" ]
+
+    114 [ label="precipitation_lag1<1152.5" ]
+    114 -> 169 [label="yes, missing" color="#0000FF"]
+    114 -> 170 [label="no" color="#FF0000"]
+
+    169 [ label="elevation<479" ]
+    169 -> 239 [label="yes, missing" color="#0000FF"]
+    169 -> 240 [label="no" color="#FF0000"]
+
+    239 [ label="deciduous<91.8639984" ]
+    239 -> 315 [label="yes, missing" color="#0000FF"]
+    239 -> 316 [label="no" color="#FF0000"]
+
+    315 [ label="leaf=-5.9739089" ]
+
+    316 [ label="leaf=-0" ]
+
+    240 [ label="leaf=0.972133815" ]
+
+    170 [ label="elevation<471" ]
+    170 -> 241 [label="yes, missing" color="#0000FF"]
+    170 -> 242 [label="no" color="#FF0000"]
+
+    241 [ label="temperature<6.21000004" ]
+    241 -> 317 [label="yes, missing" color="#0000FF"]
+    241 -> 318 [label="no" color="#FF0000"]
+
+    317 [ label="leaf=0.366537958" ]
+
+    318 [ label="leaf=-0" ]
+
+    242 [ label="age<78.5500031" ]
+    242 -> 319 [label="yes" color="#FF0000"]
+    242 -> 320 [label="no, missing" color="#0000FF"]
+
+    319 [ label="leaf=-0" ]
+
+    320 [ label="leaf=-0.581479907" ]
+
+    4 [ label="elevation<448.5" ]
+    4 -> 9 [label="yes, missing" color="#0000FF"]
+    4 -> 10 [label="no" color="#FF0000"]
+
+    9 [ label="deciduous<87.1804962" ]
+    9 -> 19 [label="yes, missing" color="#0000FF"]
+    9 -> 20 [label="no" color="#FF0000"]
+
+    19 [ label="temperature_lag3<5.2750001" ]
+    19 -> 39 [label="yes, missing" color="#0000FF"]
+    19 -> 40 [label="no" color="#FF0000"]
+
+    39 [ label="precipitation_lag1<1128.5" ]
+    39 -> 67 [label="yes, missing" color="#0000FF"]
+    39 -> 68 [label="no" color="#FF0000"]
+
+    67 [ label="deciduous<69.8919983" ]
+    67 -> 115 [label="yes, missing" color="#0000FF"]
+    67 -> 116 [label="no" color="#FF0000"]
+
+    115 [ label="age<82.2850037" ]
+    115 -> 171 [label="yes" color="#FF0000"]
+    115 -> 172 [label="no, missing" color="#0000FF"]
+
+    171 [ label="leaf=-1.56975496" ]
+
+    172 [ label="leaf=2.06566668" ]
+
+    116 [ label="leaf=7.47812414" ]
+
+    68 [ label="leaf=-0" ]
+
+    40 [ label="leaf=-0.777559042" ]
+
+    20 [ label="precipitation_lag2<1306.5" ]
+    20 -> 41 [label="yes, missing" color="#0000FF"]
+    20 -> 42 [label="no" color="#FF0000"]
+
+    41 [ label="precipitation_lag1<1110.5" ]
+    41 -> 69 [label="yes, missing" color="#0000FF"]
+    41 -> 70 [label="no" color="#FF0000"]
+
+    69 [ label="leaf=-5.90869141" ]
+
+    70 [ label="age<86.1800003" ]
+    70 -> 117 [label="yes" color="#FF0000"]
+    70 -> 118 [label="no, missing" color="#0000FF"]
+
+    117 [ label="leaf=-0" ]
+
+    118 [ label="leaf=0.423690796" ]
+
+    42 [ label="leaf=2.11132121" ]
+
+    10 [ label="age<72.7400055" ]
+    10 -> 21 [label="yes" color="#FF0000"]
+    10 -> 22 [label="no, missing" color="#0000FF"]
+
+    21 [ label="deciduous<83.8135071" ]
+    21 -> 43 [label="yes, missing" color="#0000FF"]
+    21 -> 44 [label="no" color="#FF0000"]
+
+    43 [ label="elevation<492" ]
+    43 -> 71 [label="yes, missing" color="#0000FF"]
+    43 -> 72 [label="no" color="#FF0000"]
+
+    71 [ label="leaf=-0.598619998" ]
+
+    72 [ label="leaf=-0" ]
+
+    44 [ label="deciduous<93.8304977" ]
+    44 -> 73 [label="yes, missing" color="#0000FF"]
+    44 -> 74 [label="no" color="#FF0000"]
+
+    73 [ label="leaf=4.16770411" ]
+
+    74 [ label="leaf=-0" ]
+
+    22 [ label="temperature_lag2<3.95000005" ]
+    22 -> 45 [label="yes, missing" color="#0000FF"]
+    22 -> 46 [label="no" color="#FF0000"]
+
+    45 [ label="age<85.9899979" ]
+    45 -> 75 [label="yes" color="#FF0000"]
+    45 -> 76 [label="no, missing" color="#0000FF"]
+
+    75 [ label="precipitation_lag1<1077" ]
+    75 -> 119 [label="yes, missing" color="#0000FF"]
+    75 -> 120 [label="no" color="#FF0000"]
+
+    119 [ label="leaf=-0" ]
+
+    120 [ label="leaf=3.5472343" ]
+
+    76 [ label="deciduous<76.4964981" ]
+    76 -> 121 [label="yes, missing" color="#0000FF"]
+    76 -> 122 [label="no" color="#FF0000"]
+
+    121 [ label="leaf=-0" ]
+
+    122 [ label="leaf=-1.16334391" ]
+
+    46 [ label="precipitation_lag3<996" ]
+    46 -> 77 [label="yes, missing" color="#0000FF"]
+    46 -> 78 [label="no" color="#FF0000"]
+
+    77 [ label="age<78.0699997" ]
+    77 -> 123 [label="yes" color="#FF0000"]
+    77 -> 124 [label="no, missing" color="#0000FF"]
+
+    123 [ label="leaf=1.43137574" ]
+
+    124 [ label="leaf=-0.577803195" ]
+
+    78 [ label="age<78.6800003" ]
+    78 -> 125 [label="yes" color="#FF0000"]
+    78 -> 126 [label="no, missing" color="#0000FF"]
+
+    125 [ label="leaf=-6.39934158" ]
+
+    126 [ label="age<80.4400024" ]
+    126 -> 173 [label="yes" color="#FF0000"]
+    126 -> 174 [label="no, missing" color="#0000FF"]
+
+    173 [ label="leaf=0.119563855" ]
+
+    174 [ label="deciduous<72.2714996" ]
+    174 -> 243 [label="yes, missing" color="#0000FF"]
+    174 -> 244 [label="no" color="#FF0000"]
+
+    243 [ label="leaf=-0" ]
+
+    244 [ label="leaf=-0.639395773" ]
+
+    2 [ label="age<75.3800049" ]
+    2 -> 5 [label="yes" color="#FF0000"]
+    2 -> 6 [label="no, missing" color="#0000FF"]
+
+    5 [ label="age<67.6299973" ]
+    5 -> 11 [label="yes" color="#FF0000"]
+    5 -> 12 [label="no, missing" color="#0000FF"]
+
+    11 [ label="temperature_lag1<5.51000023" ]
+    11 -> 23 [label="yes, missing" color="#0000FF"]
+    11 -> 24 [label="no" color="#FF0000"]
+
+    23 [ label="precipitation_lag3<1005.5" ]
+    23 -> 47 [label="yes, missing" color="#0000FF"]
+    23 -> 48 [label="no" color="#FF0000"]
+
+    47 [ label="age<37.4249992" ]
+    47 -> 79 [label="yes" color="#FF0000"]
+    47 -> 80 [label="no, missing" color="#0000FF"]
+
+    79 [ label="leaf=1.19602621" ]
+
+    80 [ label="deciduous<87.6930008" ]
+    80 -> 127 [label="yes, missing" color="#0000FF"]
+    80 -> 128 [label="no" color="#FF0000"]
+
+    127 [ label="age<66.1900024" ]
+    127 -> 175 [label="yes" color="#FF0000"]
+    127 -> 176 [label="no, missing" color="#0000FF"]
+
+    175 [ label="temperature<4.19499969" ]
+    175 -> 245 [label="yes, missing" color="#0000FF"]
+    175 -> 246 [label="no" color="#FF0000"]
+
+    245 [ label="leaf=-0" ]
+
+    246 [ label="leaf=-8.38353634" ]
+
+    176 [ label="leaf=-0" ]
+
+    128 [ label="age<63.4599991" ]
+    128 -> 177 [label="yes" color="#FF0000"]
+    128 -> 178 [label="no, missing" color="#0000FF"]
+
+    177 [ label="leaf=1.5777725" ]
+
+    178 [ label="deciduous<93.0110016" ]
+    178 -> 247 [label="yes, missing" color="#0000FF"]
+    178 -> 248 [label="no" color="#FF0000"]
+
+    247 [ label="leaf=-1.97190082" ]
+
+    248 [ label="leaf=-0" ]
+
+    48 [ label="age<67.3499985" ]
+    48 -> 81 [label="yes" color="#FF0000"]
+    48 -> 82 [label="no, missing" color="#0000FF"]
+
+    81 [ label="precipitation<1069.5" ]
+    81 -> 129 [label="yes, missing" color="#0000FF"]
+    81 -> 130 [label="no" color="#FF0000"]
+
+    129 [ label="age<55.7200012" ]
+    129 -> 179 [label="yes" color="#FF0000"]
+    129 -> 180 [label="no, missing" color="#0000FF"]
+
+    179 [ label="leaf=-0" ]
+
+    180 [ label="leaf=2.34974456" ]
+
+    130 [ label="leaf=-0" ]
+
+    82 [ label="leaf=-1.64838564" ]
+
+    24 [ label="leaf=4.4719739" ]
+
+    12 [ label="precipitation_lag2<1319" ]
+    12 -> 25 [label="yes, missing" color="#0000FF"]
+    12 -> 26 [label="no" color="#FF0000"]
+
+    25 [ label="deciduous<92.1710052" ]
+    25 -> 49 [label="yes, missing" color="#0000FF"]
+    25 -> 50 [label="no" color="#FF0000"]
+
+    49 [ label="protected_0<0.5" ]
+    49 -> 83 [label="yes, missing" color="#0000FF"]
+    49 -> 84 [label="no" color="#FF0000"]
+
+    83 [ label="leaf=-0.46015349" ]
+
+    84 [ label="age<74.8499985" ]
+    84 -> 131 [label="yes" color="#FF0000"]
+    84 -> 132 [label="no, missing" color="#0000FF"]
+
+    131 [ label="elevation<485.5" ]
+    131 -> 181 [label="yes, missing" color="#0000FF"]
+    131 -> 182 [label="no" color="#FF0000"]
+
+    181 [ label="leaf=6.45766592" ]
+
+    182 [ label="age<71.7600021" ]
+    182 -> 249 [label="yes" color="#FF0000"]
+    182 -> 250 [label="no, missing" color="#0000FF"]
+
+    249 [ label="leaf=-0.0250524338" ]
+
+    250 [ label="leaf=0.273202658" ]
+
+    132 [ label="deciduous<86.463501" ]
+    132 -> 183 [label="yes, missing" color="#0000FF"]
+    132 -> 184 [label="no" color="#FF0000"]
+
+    183 [ label="age<75.1699982" ]
+    183 -> 251 [label="yes" color="#FF0000"]
+    183 -> 252 [label="no, missing" color="#0000FF"]
+
+    251 [ label="leaf=-0.222634345" ]
+
+    252 [ label="leaf=-0" ]
+
+    184 [ label="leaf=0.523255229" ]
+
+    50 [ label="temperature_lag1<4.03499985" ]
+    50 -> 85 [label="yes, missing" color="#0000FF"]
+    50 -> 86 [label="no" color="#FF0000"]
+
+    85 [ label="precipitation_lag3<1003.5" ]
+    85 -> 133 [label="yes, missing" color="#0000FF"]
+    85 -> 134 [label="no" color="#FF0000"]
+
+    133 [ label="leaf=-1.07600868" ]
+
+    134 [ label="age<75.1800003" ]
+    134 -> 185 [label="yes" color="#FF0000"]
+    134 -> 186 [label="no, missing" color="#0000FF"]
+
+    185 [ label="deciduous<93.3134995" ]
+    185 -> 253 [label="yes, missing" color="#0000FF"]
+    185 -> 254 [label="no" color="#FF0000"]
+
+    253 [ label="leaf=-0" ]
+
+    254 [ label="leaf=3.02276874" ]
+
+    186 [ label="leaf=-0" ]
+
+    86 [ label="leaf=-2.00293422" ]
+
+    26 [ label="elevation<361.5" ]
+    26 -> 51 [label="yes, missing" color="#0000FF"]
+    26 -> 52 [label="no" color="#FF0000"]
+
+    51 [ label="age<72.8099976" ]
+    51 -> 87 [label="yes" color="#FF0000"]
+    51 -> 88 [label="no, missing" color="#0000FF"]
+
+    87 [ label="leaf=1.3451035" ]
+
+    88 [ label="leaf=-0" ]
+
+    52 [ label="age<73.6600037" ]
+    52 -> 89 [label="yes" color="#FF0000"]
+    52 -> 90 [label="no, missing" color="#0000FF"]
+
+    89 [ label="deciduous<71.7675018" ]
+    89 -> 135 [label="yes, missing" color="#0000FF"]
+    89 -> 136 [label="no" color="#FF0000"]
+
+    135 [ label="leaf=-0" ]
+
+    136 [ label="leaf=-1.95163155" ]
+
+    90 [ label="leaf=0.305634052" ]
+
+    6 [ label="age<87.1900024" ]
+    6 -> 13 [label="yes" color="#FF0000"]
+    6 -> 14 [label="no, missing" color="#0000FF"]
+
+    13 [ label="precipitation_lag2<1319.5" ]
+    13 -> 27 [label="yes, missing" color="#0000FF"]
+    13 -> 28 [label="no" color="#FF0000"]
+
+    27 [ label="precipitation_lag1<1080" ]
+    27 -> 53 [label="yes, missing" color="#0000FF"]
+    27 -> 54 [label="no" color="#FF0000"]
+
+    53 [ label="leaf=0.674279809" ]
+
+    54 [ label="age<79.3000031" ]
+    54 -> 91 [label="yes" color="#FF0000"]
+    54 -> 92 [label="no, missing" color="#0000FF"]
+
+    91 [ label="deciduous<91.6184998" ]
+    91 -> 137 [label="yes, missing" color="#0000FF"]
+    91 -> 138 [label="no" color="#FF0000"]
+
+    137 [ label="precipitation_lag1<1120" ]
+    137 -> 187 [label="yes, missing" color="#0000FF"]
+    137 -> 188 [label="no" color="#FF0000"]
+
+    187 [ label="precipitation_lag3<1030.5" ]
+    187 -> 255 [label="yes, missing" color="#0000FF"]
+    187 -> 256 [label="no" color="#FF0000"]
+
+    255 [ label="leaf=-10.2914381" ]
+
+    256 [ label="leaf=-0.213464856" ]
+
+    188 [ label="leaf=0.148572609" ]
+
+    138 [ label="deciduous<92.7294998" ]
+    138 -> 189 [label="yes, missing" color="#0000FF"]
+    138 -> 190 [label="no" color="#FF0000"]
+
+    189 [ label="precipitation_lag1<1087" ]
+    189 -> 257 [label="yes, missing" color="#0000FF"]
+    189 -> 258 [label="no" color="#FF0000"]
+
+    257 [ label="leaf=-0" ]
+
+    258 [ label="leaf=0.951986909" ]
+
+    190 [ label="leaf=-2.25767064" ]
+
+    92 [ label="elevation<423" ]
+    92 -> 139 [label="yes, missing" color="#0000FF"]
+    92 -> 140 [label="no" color="#FF0000"]
+
+    139 [ label="deciduous<63.3604965" ]
+    139 -> 191 [label="yes, missing" color="#0000FF"]
+    139 -> 192 [label="no" color="#FF0000"]
+
+    191 [ label="leaf=-0" ]
+
+    192 [ label="leaf=1.53433919" ]
+
+    140 [ label="deciduous<85.701004" ]
+    140 -> 193 [label="yes, missing" color="#0000FF"]
+    140 -> 194 [label="no" color="#FF0000"]
+
+    193 [ label="leaf=-2.74779677" ]
+
+    194 [ label="leaf=-0" ]
+
+    28 [ label="temperature<5.73000002" ]
+    28 -> 55 [label="yes, missing" color="#0000FF"]
+    28 -> 56 [label="no" color="#FF0000"]
+
+    55 [ label="temperature<4.14499998" ]
+    55 -> 93 [label="yes, missing" color="#0000FF"]
+    55 -> 94 [label="no" color="#FF0000"]
+
+    93 [ label="leaf=-0" ]
+
+    94 [ label="leaf=-2.66258216" ]
+
+    56 [ label="precipitation_lag3<1010.5" ]
+    56 -> 95 [label="yes, missing" color="#0000FF"]
+    56 -> 96 [label="no" color="#FF0000"]
+
+    95 [ label="leaf=-0.481788397" ]
+
+    96 [ label="age<84.9599991" ]
+    96 -> 141 [label="yes" color="#FF0000"]
+    96 -> 142 [label="no, missing" color="#0000FF"]
+
+    141 [ label="leaf=3.62211871" ]
+
+    142 [ label="leaf=-0" ]
+
+    14 [ label="age<98.8249969" ]
+    14 -> 29 [label="yes" color="#FF0000"]
+    14 -> 30 [label="no, missing" color="#0000FF"]
+
+    29 [ label="leaf=2.73052287" ]
+
+    30 [ label="leaf=-0" ]
+}
