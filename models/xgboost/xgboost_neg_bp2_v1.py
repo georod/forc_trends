@@ -45,7 +45,7 @@ df2 = pd.get_dummies(df1, columns=['protected'], dtype=float)
 
 df2= df2[df2['precipitation'].notna()]
 
-X1 = df2.iloc[:,2:24]
+X1 = df2.iloc[:,2:30]
 
 X1.drop(X1.columns[[2, 12, 14, 16, 18]], axis=1,inplace=True)
 
