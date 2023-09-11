@@ -47,13 +47,13 @@ df2= df2[df2['precipitation'].notna()]
 
 X1 = df2.iloc[:,2:30]
 
-X1.drop(X1.columns[[2, 12, 14, 16, 18]], axis=1,inplace=True)
+X1.drop(X1.columns[[2, 12, 14, 16, 18, 19, 20,21,22,23,24,25]], axis=1,inplace=True)
 
 y1 = df2.iloc[:,1]
 
 
-features_names1 = ["age","deciduous","elevation","precipitation","temperature","precipitation_lag1", "temperature_lag1", "precipitation_lag2", "temperature_lag2", "precipitation_lag3", "temperature_lag3",
-                 "rh" ,"rh_lag1","rh_lag2","rh_lag3"]
+#features_names1 = ["age","deciduous","elevation","precipitation","temperature","precipitation_lag1", "temperature_lag1", "precipitation_lag2", "temperature_lag2", "precipitation_lag3", "temperature_lag3",
+ #                "rh" ,"rh_lag1","rh_lag2","rh_lag3"]
 
 
 # Fine tune parameters using RandomizedSearchCV (faster)
