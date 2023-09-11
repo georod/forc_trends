@@ -47,7 +47,7 @@ df2= df2[df2['precipitation'].notna()]
 
 X1 = df2.iloc[:,2:24]
 
-X1.drop(X1.columns[[2, 12, 14, 16, 18]], axis=1,inplace=True)
+X1.drop(X1.columns[[2, 12, 14, 16, 18, 19, 20,21,22,23,24,25]], axis=1,inplace=True)
 
 y1 = df2.iloc[:,1]
 
@@ -70,18 +70,20 @@ x1_train, x1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=testsi
 
 
 #{'reg_lambda': 10, 'reg_alpha': 0.1, 'objective': 'reg:squarederror', 'n_estimators': 1000, 'max_depth': 8, 'learning_rate': 0.005, 'gamma': 0.05}
+
+#{'reg_lambda': 10, 'reg_alpha': 1, 'objective': 'reg:squarederror', 'n_estimators': 1000, 'max_depth': 8, 'learning_rate': 0.01, 'gamma': 0.2}
             
 model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
              colsample_bytree=None, early_stopping_rounds=50,
              enable_categorical=False, eval_metric=None, feature_types=None,
-             gamma=0.05, gpu_id=None, grow_policy=None, importance_type=None,
-             interaction_constraints=None, learning_rate=0.005, max_bin=None,
+             gamma=0.2, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.01, max_bin=None,
              max_cat_threshold=None, max_cat_to_onehot=None,
              max_delta_step=None, max_depth=8, max_leaves=None,
              min_child_weight=None, missing=nan, monotone_constraints=None,
              n_estimators=1000, n_jobs=None, num_parallel_tree=None,
-             predictor=None, random_state=42, reg_lambda=10, reg_alpha=0.1)
+             predictor=None, random_state=42, reg_lambda=10, reg_alpha=1)
 
 
 
@@ -107,7 +109,7 @@ print("R-sq: %.2f" % r2)
 # Save model
 # save in JSON format
 #model_bp1.save_model("model_bp1_pos_brks_v1.json")
-model_bp2.save_model("model_bp2_pos_brks_v1.json")
+model_bp2.save_model("model_bp2_pos_brks_v2.json")
 # save in text format
 #model_m2.save_model("model_m2.txt")
 

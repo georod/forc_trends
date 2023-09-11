@@ -69,6 +69,9 @@ x1_train, x1_test, y1_train, y1_test = train_test_split(X1, y1, test_size=testsi
 
 
 #{'reg_lambda': 100, 'reg_alpha': 10, 'objective': 'reg:squarederror', 'n_estimators': 1000, 'max_depth': 8, 'learning_rate': 0.05, 'gamma': 0.3}
+
+#{'reg_lambda': 100, 'reg_alpha': 10, 'objective': 'reg:squarederror', 'n_estimators': 1000, 'max_depth': 8, 'learning_rate': 0.05, 'gamma': 0.3} # The same as before
+
 model_bp2 = XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
              colsample_bytree=None, early_stopping_rounds=50,
@@ -104,7 +107,7 @@ print("R-sq: %.2f" % r2)
 # Save model
 # save in JSON format
 #model_bp1.save_model("model_bp1_pos_brks_v1.json")
-model_bp2.save_model("model_bp2_neg_brks_v1.json")
+model_bp2.save_model("model_bp2_neg_brks_v2.json")
 # save in text format
 #model_m2.save_model("model_m2.txt")
 
