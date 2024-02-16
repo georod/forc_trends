@@ -1,4 +1,4 @@
-# 2023-08-29
+# 2024-02-15
 # Peter R.
 # XGBoost script
 # Negative breaks, n_estimators (number of trees)=1000 and with optimal parameter from DRAC model_bp1 & early stopping
@@ -38,7 +38,7 @@ print("negative breaks")
 # Windows
 #df1 = pd.read_csv(r'.\data\forest_evi_breaks_positive_sam1.csv', skipinitialspace=True)
 # DRAC
-df1 = pd.read_csv(r'./data/forest_evi_breaks_negative_v1.csv', skipinitialspace=True)
+df1 = pd.read_csv(r'./data/forest_evi_breaks_negative_v2.csv', skipinitialspace=True)
 #df1.head()
 
 df2 = pd.get_dummies(df1, columns=['protected'], dtype=float)
@@ -52,9 +52,9 @@ df2 = pd.get_dummies(df1, columns=['protected'], dtype=float)
 cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'nffd_wt', 'nffd_wt_lag1', 'nffd_wt_lag2', 'nffd_wt_lag3', 'pas_sm', 'pas_sm_lag1', 'pas_sm_lag2', 'pas_sm_lag3', 'for_pro_0']
 X1 = df2[cols2]
 
-y1 = df2.iloc[:,1].abs()
+y1 = df2.iloc[:,6].abs()
 
-
+# vars used in previous version: 'map', 'map_lag1', 'map_lag2', 'map_lag3','mat', 'mat_lag1', 'mat_lag2', 'mat_lag3','rh', 'rh_lag1', 'rh_lag2', 'rh_lag3'
 #features_names1 = ["age","deciduous","elevation","precipitation","temperature","precipitation_lag1", "temperature_lag1", "precipitation_lag2", "temperature_lag2", "precipitation_lag3", "temperature_lag3",
  #                "rh" ,"rh_lag1","rh_lag2","rh_lag3"]
 

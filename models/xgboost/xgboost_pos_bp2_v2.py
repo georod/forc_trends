@@ -49,8 +49,6 @@ df2 = pd.get_dummies(df1, columns=['for_pro'], dtype=float)
 
 #X1.drop(X1.columns[[0:5, 7:10, 12, 15, 16, 18, 19, 20,21,22,23,24,25]], axis=1,inplace=True)
 
-y1 = df2.iloc[:,6]
-
 cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'nffd_wt', 'nffd_wt_lag1', 'nffd_wt_lag2', 'nffd_wt_lag3', 'pas_sm', 'pas_sm_lag1', 'pas_sm_lag2', 'pas_sm_lag3', 'for_pro_0']
 X1 = df2[cols2]
 
@@ -58,6 +56,7 @@ X1 = df2[cols2]
 #features_names1 = ["age","deciduous","elevation","precipitation","temperature","precipitation_lag1", "temperature_lag1", "precipitation_lag2", "temperature_lag2", "precipitation_lag3", "temperature_lag3",
 #                 "rh" ,"rh_lag1","rh_lag2","rh_lag3"]
 
+y1 = df2.iloc[:,6]
 
 # Fine tune parameters using RandomizedSearchCV (faster)
 # max_depth is tree complexity in Elith et al. 2008
