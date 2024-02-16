@@ -41,7 +41,7 @@ print("negative breaks")
 df1 = pd.read_csv(r'./data/forest_evi_breaks_negative_v2.csv', skipinitialspace=True)
 #df1.head()
 
-df2 = pd.get_dummies(df1, columns=['protected'], dtype=float)
+df2 = pd.get_dummies(df1, columns=['for_pro'], dtype=float)
 
 #df2= df2[df2['precipitation'].notna()]
 
