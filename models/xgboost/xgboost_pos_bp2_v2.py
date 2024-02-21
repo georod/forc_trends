@@ -1,4 +1,4 @@
-# 2024-02-15
+# 2024-02-20
 # Peter R.
 # XGBoost script
 # Positive breaks, n_estimators (number of trees)=1000 and with optimal parameter from DRAC model_bp1 & early stopping
@@ -50,7 +50,9 @@ df2 = pd.get_dummies(df1, columns=['for_pro'], dtype=float)
 #X1.drop(X1.columns[[0:5, 7:10, 12, 15, 16, 18, 19, 20,21,22,23,24,25]], axis=1,inplace=True)
 
 #cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'nffd_wt', 'nffd_wt_lag1', 'nffd_wt_lag2', 'nffd_wt_lag3', 'pas_sm', 'pas_sm_lag1', 'pas_sm_lag2', 'pas_sm_lag3', 'for_pro_0']
-cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'nffd_wt', 'nffd_wt_lag1', 'nffd_wt_lag2', 'nffd_wt_lag3', 'pas_sm', 'pas_sm_lag1', 'pas_sm_lag2', 'pas_sm_lag3', 'for_pro_0', 'map', 'map_lag1', 'map_lag2', 'map_lag3','mat', 'mat_lag1', 'mat_lag2', 'mat_lag3','rh', 'rh_lag1', 'rh_lag2', 'rh_lag3']
+#cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'nffd_wt', 'nffd_wt_lag1', 'nffd_wt_lag2', 'nffd_wt_lag3', 'pas_sm', 'pas_sm_lag1', 'pas_sm_lag2', 'pas_sm_lag3', 'for_pro_0', 'map', 'map_lag1', 'map_lag2', 'map_lag3','mat', 'mat_lag1', 'mat_lag2', 'mat_lag3','rh', 'rh_lag1', 'rh_lag2', 'rh_lag3']
+cols2 =  ['for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'dd5_wt_lag2']
+#cols2 = ['for_age','for_con', 'cmi_sm', 'cmi_sm_lag1', 'cmi_sm_lag2', 'cmi_sm_lag3', 'dd5_wt', 'dd5_wt_lag2', 'for_pro_0', 'for_pro_1']
 X1 = df2[cols2]
 
 # vars used in previous version: 'map', 'map_lag1', 'map_lag2', 'map_lag3','mat', 'mat_lag1', 'mat_lag2', 'mat_lag3','rh', 'rh_lag1', 'rh_lag2', 'rh_lag3'
@@ -113,7 +115,9 @@ print("R-sq: %.2f" % r2)
 # save in JSON format
 #model_bp1.save_model("model_bp1_pos_brks_v1.json")
 #model_bp2.save_model("model_bp2_pos_brks_v3.json") # Take 2 with new climate vars
-model_bp2.save_model("model_bp2_pos_brks_v4.json") # Take 2 with new climate vars + old vars
+#model_bp2.save_model("model_bp2_pos_brks_v4.json") # Take 2 with new climate vars + old vars
+model_bp2.save_model("model_bp2_pos_brks_v5.json") # Take 3 with VIF var subset
+#model_bp2.save_model("model_bp2_pos_brks_v6.json") # Take 3 with VIF var subset + a few old vars (for_age, etc.)
 # save in text format
 #model_m2.save_model("model_m2.txt")
 
