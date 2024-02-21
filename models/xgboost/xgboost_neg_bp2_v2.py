@@ -116,8 +116,8 @@ print("R-sq: %.2f" % r2)
 #model_bp1.save_model("model_bp1_pos_brks_v1.json")
 #model_bp2.save_model("model_bp2_neg_brks_v3.json") # Take 2 with new climate vars
 #model_bp2.save_model("model_bp2_neg_brks_v4.json") # Take 2 with new climate vars + old vars
-model_bp2.save_model("model_bp2_pos_brks_v5.json") # Take 3 with VIF var subset
-#model_bp2.save_model("model_bp2_pos_brks_v6.json") # Take 3 with VIF var subset + a few old vars (for_age, etc.)
+model_bp2.save_model("model_bp2_neg_brks_v5.json") # Take 3 with VIF var subset
+#model_bp2.save_model("model_bp2_neg_brks_v6.json") # Take 3 with VIF var subset + a few old vars (for_age, etc.)
 # save in text format
 #model_m2.save_model("model_m2.txt")
 
