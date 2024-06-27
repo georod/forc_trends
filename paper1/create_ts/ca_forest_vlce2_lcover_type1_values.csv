@@ -1,0 +1,14 @@
+value, name, value2
+0 , "no change", 0
+20 , "water", 0
+31 , "snow_ice", 0
+32 , "rock_rubble", 0
+33 , "exposed_barren_land", 0
+40 , "bryoids", 0
+50 , "shrubs", 0
+80 , "wetland", 0
+81 , "wetland-treed", 1
+100 , "herbs", 0
+210 , "coniferous", 1
+220 , "broadleaf", 1
+230 , "mixedwood", 1

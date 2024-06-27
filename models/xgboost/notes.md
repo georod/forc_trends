@@ -4,8 +4,8 @@
 ### Peter R.
 
 - Here is the code I used to run XGBoost models with forest EVI break data.  
-- The folder "paper" holds clean versions of the Python code (Jupyter Notebook) developed during my PhD. Use the code in this folder to replicate some of my analyses.
-- The folder "exploratory" and "archive" hold other (and older) versions of the code.
+- The folder "exploratory" and "archive" hold various versions of the code.
+- Cleaned version of XGBoost are shared under "~/paper/models"
 
 
 
